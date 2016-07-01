@@ -1,0 +1,144 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Home Section*/
+body {
+	/*margin: 0; padding: 0;*/
+	font: 10px normal Verdana, Arial, Helvetica, sans-serif;
+	background:#ffffff;
+	margin: 0;
+}
+img{
+	width: 100%;
+	height: auto;
+}
+/*menu code*/
+nav { /******* container for my navigation ******/
+	width: 100%;
+	height: 30px;
+	position: fixed;
+	top:-10px;
+	z-index: 2;
+}
+textarea{
+	width: 310px;
+	height: 100px;
+	border-radius: 4px;
+	border: 1px solid #2db300;
+}
+#topnav {
+	/*margin: 10px 0 0px; */
+	padding: 0; 
+	list-style: none;	
+	font-size: 9px;
+	clear: both;
+	float: left;
+	width: 100%;
+}
+#topnav li{
+	margin:px; 
+	padding: 0; 
+	overflow: hidden; 
+	float: left; 
+	height:40px;
+}
+#topnav a, #topnav span {
+	padding: 10px 20px; 
+	float: left; 
+	font-weight: bold;
+	text-decoration: none; 
+	text-transform: uppercase;
+	clear: both;
+	height: 20px;
+	margin: 0px;
+	line-height: 20px;
+}
+#topnav span {
+	display: none;
+}
+ 
+#topnav.v2 span{
+	background: url(menu.jpg) repeat-x left top;
+	
+}
+#topnav{
+	background: url(menu.jpg) repeat-x left top;
+	
+}
+#topnav.v2 a{
+	background: url(menu2.jpg);
+}
+
+.main_nav:link, .main_nav:visited{
+	color: black;
+}
+ #active_list{
+	color: blue;
+}
+/******** end of menu code ********/
+#search{ /*************** search css code ********/
+    width: 200px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 12px;
+    background-color: white;
+    background-image: url('image/search.png'); /**** search icon *****/
+    background-position: 8px 5px; 
+    background-repeat: no-repeat;
+    padding: 5px;
+   /* -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out; */
+}
+#botton_style{
+	width: 100px;
+	text-align: center;
+	font-size: 12px;
+	padding: 10px 5px 10px 5px;
+	border-radius: 4px;
+	border: 1px solid #2db300;
+	background-color: #f2f2f2;
+}
+#search_container{ /****** container for my search box *******/
+	position: absolute;
+	right: 5px;
+	top: 15px;
+}
+#wrapper{
+	position: relative;
+	background-color: #cccccc;
+	top:40px;
+	width: 100%;
+	font-size: 15px;
+	color: black;
+	z-index: 1;
+}
+#quiz_container{
+	position: relative;
+	background-color: #c1c1c1;
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#name_table{
+	position: relative;
+	left: 40px;
+	top: 20px;
+	font-weight: bold;
+}
+#quiz_table{
+	position: relative;
+	top: 70px;
+	left: 60px;
+}
+
+#botton_style, .quiz_box{
+	margin-left: 30px;
+}
+/******* class selector ***********/
+.quiz_box[type=text], .student_info[type=text]{
+	width: 300px;
+	padding: 5px;
+	border-radius: 4px;
+	border: 1px solid #2db300;
+}

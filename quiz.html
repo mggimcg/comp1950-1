@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Comp1950: Quiz</title>
+<meta  charset = "utf-8" />
+
+<link rel="stylesheet" type="text/css" href="final.css" />
+
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+
+<script type="text/javascript" src= "menu.js"></script>
+
+<script>
+    function myFunction() {
+    	var num = /^[0-9]+$/;
+    	if(quiz5.value.match(num))
+    		{ 
+    		text = "";
+    		}
+    	else{
+    		text = "Not valid (Enter number)";
+    	}
+    	document.getElementById("demo").innerHTML = text;
+}
+       
+</script>
+
+
+</head>
+
+
+
+<body>
+<!--menu section-->
+	<nav> 
+		<ul id="topnav" class="v2"> 
+			<li id = "active_list"><a id = "active" class = "main_nav" href="index.html">Home</a></li> 
+			<li><a class = "main_nav" href="aboutus.html">About</a></li>
+			<li><a class = "main_nav" href="services.html">Resources</a></li> 
+		</ul> 
+		<div id = "search_container">
+					<form>
+						<input type = "text" id = "search" name = "search" placeholder = "Search..." />
+					</form>
+		</div>
+	</nav> 
+	<div id = "wrapper">
+		<div id = "quiz_container">
+			<form>
+			<table id = "name_table">
+				<tr>
+					<td><label for = "name">Name:</label></td>
+					<td><input class = "student_info" type = "text" name = "stu_name" id = "name" /></td>
+				</tr>
+				<tr>
+					<td><label for = "stu_number">Student Number:</label></td>
+					<td><input class = "student_info" type = "text" name = "stu_number" id = "stu_number" /></td>
+				</tr>
+			</table>
+			<table id = "quiz_table">
+				<tr>
+					<td><label for = "quiz1">1. What does the acronym SEO stand for? (2 marks)</label></td>
+				</tr>
+				<tr>
+					<td><input class = "quiz_box" type = "text" name = "quiz1" id = "quiz1" /></td>
+				</tr>
+				<tr>
+					<td><label for = "quiz2">2. Name at least five things you can do to optimize a page for search engines (5 marks).</label></td>
+				</tr>
+				<tr>
+					<td><textarea class = "quiz_box" name = "quiz2" id = "quiz2"></textarea></td>
+				</tr>
+				<tr>
+					<td>3. The acronym CMS stands for: (1 mark)</td>
+				</tr>
+				<tr>
+					<td>
+						<input class = "quiz_box" type = "radio" name = "quiz3" id = "a" />
+					    <label for = "a">Critical Management System</label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input class = "quiz_box" type = "radio" name = "quiz3" id = "b" />
+						<label for = "b">Content Management System</label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input class = "quiz_box" type = "radio" name = "quiz3" id = "c" />
+						<label for = "c">Central Management System</label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input class = "quiz_box" type = "radio" name = "quiz3" id = "d" />
+						<label for = "d">Content Meta System</label>
+					</td>
+				</tr>
+				<tr>
+					<td><label for = "quiz4">4. Name one CMS other than Tumblr. (2 marks)</label></td>
+				</tr>
+				<tr>
+					<td><input class = "quiz_box" type = "text" name = "quiz4" id = "quiz4" /></td>
+				</tr>
+				<tr>
+					<td><label for = "quiz5">5. 8(200(20+3)). (10 marks)</label></td>
+				</tr>
+				<tr>
+					<td><input class = "quiz_box" type = "text" name = "quiz5" id = "quiz5" /><p id = "demo"></p></td>
+				</tr>
+				<tr>
+					<td><button id = "botton_style" type="button" onclick="myFunction()">Submit</button></td>
+				</tr>
+					
+					
+			</table>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
+
